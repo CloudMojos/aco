@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">🐜 Courier Route Optimization</h1>
+        <ul class="links">
+            <!-- <li class="clickable">🏠 Home</li>
+            <li class="clickable">❓ About</li>
+            <li class="clickable">🚪 Log in</li> -->
+            <li class="clickable">🚧 Under development</li>
+        </ul>
+    </header>
+    <div class="map-container">
+        <div id="map"></div>
+        <div class="button-group-1">
+            <button id="add-origin">Add Origin</button>
+            <button id="add-destination">Add Destination</button>
+        </div>
+    </div>
+    <div class="button-group-2">
+        <button id="show-routes">Show Routes</button>
+        <button id="hide-routes">Clear Routes</button>
+    </div>
+   
+    <form id="code">
+        <p>Estimated Time in Minute(s): </p>
+        <p id="estimated-time"></p>
+        <p>Estimated Distance in Meter(s): </p>
+        <p id="estimated-distance"></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Reset */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+/* Reset */
+
+/* Body and :root */
+:root {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #c9c9c9;
+}
+/* Body and :root */
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: whitesmoke;
+
+    margin-bottom: 3vh;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.281);
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.links {
+    list-style: none;
+}
+
+header .links {
+    display: flex;
+    align-items: center;
+}
+
+header .links li {
+    font-size: 1rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+}
+
+header .links li:hover {
+    background-color: #00000050;
+}
+/* Header */
+
+button {
+    border-radius: 3px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#map {
+    height: 60vh;
+    width: 60vh;
+    border: 1px solid black;
+    grid-area: map;
+}
+
+.map-container {
+    display: flex;
+    position: relative; /* Add this */
+}
+
+.button-group-1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: -130px;
+}
+
+.button-group-1 > * {
+    margin-bottom: 5px;
+}
+
+.button-group-2 {
+    margin-top: 10px;
+}
+
+.leaflet-routing-container {
+    display: none;
+}
+
+#code {
+    min-width: 300px;
+    min-height: 2rem;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 15px;
+    padding: 5px;  
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}

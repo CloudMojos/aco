@@ -1,0 +1,33 @@
+{
+  "name": "aco-optimized-route",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":  "webpack-dev-server --open",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudMojos/aco-optimized-route.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CloudMojos/aco-optimized-route/issues"
+  },
+  "homepage": "https://github.com/CloudMojos/aco-optimized-route#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "osmtogeojson": "^3.0.0-beta.5"
+  }
+}
