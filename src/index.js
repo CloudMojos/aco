@@ -127,6 +127,7 @@ hideRoutes.addEventListener("click", (e) => {
   });
   origin.clear();
   dest.clear();
+  console.log("this happens");
   clearTimeAndDistance();
 });
 
